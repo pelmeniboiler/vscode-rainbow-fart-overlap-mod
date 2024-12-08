@@ -3,7 +3,7 @@
     <img src="overlap mod.png" alt="logo" width="100">
   <br>
   <br>
-  🌈 RAINBOW FART OVERLAP MOD
+  🌈🌈 RAINBOW FART OVERLAP MOD
   <br>
   <br>
 </h1>
