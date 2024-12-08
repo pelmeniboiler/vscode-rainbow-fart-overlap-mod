@@ -1,9 +1,9 @@
 <h1 align="center">
   <br>
-    <img src="https://github.com/SaekiRaku/vscode-rainbow-fart/blob/master/assets/logo.png?raw=true" alt="logo" width="100">
+    <img src="overlap mod.png" alt="logo" width="100">
   <br>
   <br>
-  🌈 RAINBOW FART
+  🌈 RAINBOW FART OVERLAP MOD
   <br>
   <br>
 </h1>
