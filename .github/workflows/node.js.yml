@@ -28,6 +28,10 @@ jobs:
     - name: Install Vue CLI
       run: npm install -g @vue/cli
 
+    # Run before-build script
+    - name: Run before-build script
+      run: node -r esm scripts/before-build.js
+
     # Build the Vue.js project
     - name: Build Vue.js project
       run: npm run build
@@ -39,6 +43,10 @@ jobs:
     # Package the VSCode extension
     - name: Package VSCode extension
       run: vsce package
+
+    # Run after-build script
+    - name: Run after-build script
+      run: node -r esm scripts/after-build.js
 
     # Run tests
     - run: npm test
