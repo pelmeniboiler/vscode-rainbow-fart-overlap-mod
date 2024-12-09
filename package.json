@@ -1,15 +1,15 @@
 {
-  "publisher": "saekiraku",
+  "publisher": "pelmeniboiler",
   "icon": "resources/logo.png",
-  "name": "rainbow-fart",
-  "displayName": "🌈 Rainbow Fart",
-  "description": "This extension will keep giving you compliment while you are coding.",
-  "version": "1.4.1",
+  "name": "rainbow-fart-overlap-mod",
+  "displayName": "🌈🌈 Rainbow Fart Overlap Mod",
+  "description": "A fork for SaekiRaku's Rainbow Fart to enhance the Gamblecore soundpack. Thank you to SaekiRaku and the team behind rainbow fart for their hard work!",
+  "version": "7.7.7",
   "engines": {
     "vscode": "^1.33.0"
   },
   "repository": {
-    "url": "https://github.com/SaekiRaku/vscode-rainbow-fart"
+    "url": "https://github.com/pelmeniboiler/vscode-rainbow-fart-overlap-mod"
   },
   "categories": [
     "Other"
@@ -22,7 +22,7 @@
     "commands": [
       {
         "command": "rainbow-fart.enable",
-        "title": "🌈 Enable Rainbow Fart"
+        "title": "🌈🌈 Enable Rainbow Fart Overlap Mod"
       }
     ]
   },

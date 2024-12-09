@@ -61,7 +61,8 @@ export default {
     data(){
         return {
             authorized: false,
-            failedTimes: 0
+            failedTimes: 0,
+            audioPool: []
         }
     },
     mounted(){
@@ -78,7 +79,10 @@ export default {
         },
         play(name) {
             console.log("play - " + name);
-            let audio = this.$refs["audio"];
+            let audio = this.audioPool.find(a => a.ended || a.paused) || new Audio("/voices/" + name);
+            if (!this.audioPool.includes(audio)) {
+                this.audioPool.push(audio);
+            }
             audio.src = "/voices/" + name;
             audio.currentTime = 0;
             audio.play();

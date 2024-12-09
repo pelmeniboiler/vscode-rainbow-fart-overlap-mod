@@ -153,7 +153,7 @@ module.exports = async function() {
     share.app = app;
 
     share.showTip = function() {
-        vscode.window.showInformationMessage(`🌈 Rainbow Fart is running on http://127.0.0.1:${port}/`, "open").then(result => {
+        vscode.window.showInformationMessage(`🌈🌈 RFOM is running on http://127.0.0.1:${port}/`, "open").then(result => {
             if (result === "open") {
                 open(`http://127.0.0.1:${port}/`);
             }

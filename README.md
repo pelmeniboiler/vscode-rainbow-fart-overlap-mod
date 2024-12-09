@@ -10,19 +10,19 @@
 
 [Original Rainbow Fart Page](https://github.com/SaekiRaku/vscode-rainbow-fart)
 
-Languages: [简体中文](./README.zh.md) | English
-
 ## Summary
 
-**VSCode Rainbow Fart** is an extension that keeps giving you compliment while you are coding. It will check the keywords in your code to play relative sounds.
+**VSCode Rainbow Fart** is an extension made by SaekiRaku that keeps giving you compliments as you code. It will check the keywords in your code to play relevant sounds.
 
 **Overlap Mod** is a fork I made to make my [Gamblecore](https://github.com/pelmeniboiler/gamblecore) soundpack more exciting. I hope it's useful!
 
 > Rainbow Fart is a literal translation word from Chinese, which means giving somebody exaggerated compliment that even seems a little fake. It is not connected to any specific group or individuals.
 
+> Overlap Mod is from English, which refers to the fact that it's a modification of someone else's work that enables sounds to overlap.
+
 ## Documentation
 
-For more information, please read the [documentation](https://saekiraku.github.io/vscode-rainbow-fart/
+For more information, please read the original [documentation](https://saekiraku.github.io/vscode-rainbow-fart/
 ).
 
 ## Quick Start
