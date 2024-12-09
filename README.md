@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-    <img src="overlap mod.png" alt="logo" width="100">
+    <img src="resources/logo.png" alt="logo" width="100">
   <br>
   <br>
   🌈🌈 RAINBOW FART OVERLAP MOD
