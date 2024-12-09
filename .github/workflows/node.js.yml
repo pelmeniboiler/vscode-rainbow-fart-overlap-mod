@@ -24,6 +24,10 @@ jobs:
         cache: 'npm'
     - run: npm ci
 
+    # Install ESM
+    - name: Install ESM
+      run: npm install esm
+
     # Install Vue CLI
     - name: Install Vue CLI
       run: npm install -g @vue/cli
