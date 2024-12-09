@@ -1,6 +1,3 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
-
 name: Node.js CI
 
 on:
@@ -17,7 +14,6 @@ jobs:
     strategy:
       matrix:
         node-version: [18.x, 20.x, 22.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
     - uses: actions/checkout@v4
@@ -27,5 +23,22 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-    - run: npm run build --if-present
+
+    # Install Vue CLI
+    - name: Install Vue CLI
+      run: npm install -g @vue/cli
+
+    # Build the Vue.js project
+    - name: Build Vue.js project
+      run: npm run build
+
+    # Install vsce
+    - name: Install vsce
+      run: npm install -g vsce
+
+    # Package the VSCode extension
+    - name: Package VSCode extension
+      run: vsce package
+
+    # Run tests
     - run: npm test
