@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 import jsonFormat from "json-format";
 
-console.log("Running before-build.js");
+console.log("Running before-build.js with arguments:", process.argv);
 
 const VERSION = fs.readFileSync(path.resolve(__dirname, "../VERSION")).toString().trim();
 const PATH_PACKAGEJSON = path.resolve(__dirname, "../package.json");
@@ -26,23 +26,3 @@ globaljs = globaljs.replace(winversion, winversion.replace(version, VERSION));
 fs.writeFileSync(PATH_GLOBALJS, globaljs);
 
 console.log("Completed before-build.js");
-
-// after-build.js
-import fs from "fs";
-import path from "path";
-import { sync as glob } from "glob";
-
-console.log("Running after-build.js");
-
-// let files = glob("*.vsix", { cwd: path.resolve(__dirname, "../"), absolute: true });
-// files.forEach((filepath) => {
-//     let targetpath = path.resolve(__dirname, "../docs/releases", path.basename(filepath));
-//     fs.renameSync(filepath, targetpath);
-// })
-
-fs.copyFileSync(
-    path.resolve(__dirname, "../CHANGELOG.md"),
-    path.resolve(__dirname, "../docs/CHANGELOG.md")
-)
-
-console.log("Completed after-build.js");
