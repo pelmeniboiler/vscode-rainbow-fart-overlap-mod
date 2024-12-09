@@ -2,6 +2,8 @@ import fs from "fs";
 import path from "path";
 import jsonFormat from "json-format";
 
+console.log("Running before-build.js with arguments:", process.argv);
+
 const VERSION = fs.readFileSync(path.resolve(__dirname, "../VERSION")).toString().trim();
 const PATH_PACKAGEJSON = path.resolve(__dirname, "../package.json");
 
@@ -21,3 +23,5 @@ if (winversion != null) {
 let version = winversion.match(/\".*\"/g)[0].replace(/\"/g, "");
 globaljs = globaljs.replace(winversion, winversion.replace(version, VERSION));
 fs.writeFileSync(PATH_GLOBALJS, globaljs);
+
+console.log("Completed before-build.js");
